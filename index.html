@@ -30,8 +30,8 @@
         <div class="d-none d-lg-block">
           <ul class="navList d-flex list-unstyled text-center fw-bold">
             <li class="border-start h-104px text-black hover-bg-black"><a href="discover.html" title="探索" class="d-flex px-8 w-100 h-100 align-items-center">探索</a></li>
-            <li class="border-start h-104px text-black hover-bg-black"><a href="#" title="市值" class="d-flex px-8 w-100 h-100 align-items-center">市值</a></li>
-            <li class="border-start h-104px text-black hover-bg-black"><a href="#" title="錢包" class="d-flex px-8 w-100 h-100 align-items-center"><i class="fa-solid fa-wallet fs-4"></i></a></li>
+            <li class="border-start h-104px text-black hover-bg-black"><a href="ranking.html" title="市值" class="d-flex px-8 w-100 h-100 align-items-center">市值</a></li>
+            <li class="border-start h-104px text-black hover-bg-black"><button title="錢包" class="btn d-flex px-8 w-100 h-100 align-items-center" data-bs-toggle="modal" data-bs-target="#Modalwallet"><i class="fa-solid fa-wallet fs-4"></i></button></li>
           </ul>
         </div>
         
@@ -46,11 +46,10 @@
     <div class="collapse border-top bg-white pb-6" id="navMainList">
       <ul class="container d-flex flex-column list-unstyled text-center fs-6">
         <li class="border-bottom "><a href="discover.html" title="探索" class="d-block py-6 fw-bold link-black">探索</a></li>
-        <li><a href="#" title="市值" class=" d-block py-6 fw-bold link-black">市值</a></li>
-        <li><a href="#" title="錢包" class="btn btn-primary text-white w-100 py-3 border ">連結錢包</a></li>
+        <li><a href="ranking.html" title="市值" class=" d-block py-6 fw-bold link-black">市值</a></li>
+        <li><button title="連結錢包" class="btn btn-primary text-white w-100 py-3 border " data-bs-toggle="modal" data-bs-target="#Modalwallet">連結錢包</button></li>
       </ul>
     </div>
-
     <!-- searchBar -->
     <div class="collapse bg-light border-bottom position-absolute top-0 start-0 w-100 " id="navSearch">
       <div class="px-3 d-flex align-items-center">
@@ -462,6 +461,77 @@
   <footer class="w-100 py-6 text-center text-NotoSansTC">
     © ART NFT. All Rights Reserved
   </footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="Modalwallet" tabindex="-1" aria-labelledby="ModalwalletLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center w-100 fs-5 p-4" id="ModalwalletLabel">連結你的錢包</h5>
+        <button type="button" class="btn-close d-md-none me-3" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark-large"></i></button>
+      </div>
+      <div class="modal-body px-lg-4 py-6">
+        <ul class="wallet-check w-100 row g-2 btn-group list-unstyled" role="group" aria-label="wallet checkbox toggle button group">
+          <li class="col-md-6">
+            <input type="checkbox" class="d-none" name="checkbox01" id="checkbox01-1" autocomplete="off">
+            <label class=" btn d-flex p-4 border w-100" for="checkbox01-1">
+              <img src="./assets/images/logo/connect01.png" width="16" alt="MetaMask icon"/>
+              <h6 class="lh-1 fs-6 ms-3">MetaMask</h6>
+              <i class="fa-solid fa-check"></i>
+            </label>
+          </li>
+          <li class="col-md-6">
+            <input type="checkbox" class="d-none" name="checkbox01" id="checkbox01-2" autocomplete="off">
+            <label class=" btn d-flex p-4 border w-100" for="checkbox01-2">
+              <img src="./assets/images/logo/connect02.png" width="16" alt="Coinbase Wallet icon"/>
+              <h6 class="lh-1 fs-6 ms-3">Coinbase Wallet</h6>
+              <i class="fa-solid fa-check"></i>
+            </label>
+          </li>
+          <li class="col-md-6">
+            <input type="checkbox" class="d-none" name="checkbox01" id="checkbox01-3" autocomplete="off">
+            <label class=" btn d-flex p-4 border w-100" for="checkbox01-3">
+              <img src="./assets/images/logo/connect03.png" width="16" alt="WalletConnect icon"/>
+              <h6 class="lh-1 fs-6 ms-3">WalletConnect</h6>
+              <i class="fa-solid fa-check"></i>
+            </label>
+          </li>
+          <li class="col-md-6">
+            <input type="checkbox" class="d-none" name="checkbox01" id="checkbox01-4" autocomplete="off">
+            <label class=" btn d-flex p-4 border w-100" for="checkbox01-4">
+              <img src="./assets/images/logo/connect04.png" width="16" alt="Phantom icon"/>
+              <h6 class="lh-1 fs-6 ms-3">Phantom</h6>
+              <i class="fa-solid fa-check"></i>
+            </label>
+          </li>
+          <li class="col-md-6">
+            <input type="checkbox" class="d-none" name="checkbox01" id="checkbox01-5" autocomplete="off">
+            <label class=" btn d-flex p-4 border w-100" for="checkbox01-5">
+              <img src="./assets/images/logo/connect05.png" width="16" alt="Glow icon"/>
+              <h6 class="lh-1 fs-6 ms-3">Glow</h6>
+              <i class="fa-solid fa-check"></i>
+            </label>
+          </li>
+          <li class="col-md-6">
+            <input type="checkbox" class="d-none" name="checkbox01" id="checkbox01-6" autocomplete="off">
+            <label class=" btn d-flex p-4 border w-100" for="checkbox01-6">
+              <img src="./assets/images/logo/connect06.png" width="16" alt="Fortmatic icon"/>
+              <h6 class="lh-1 fs-6 ms-3">Fortmatic</h6>
+              <i class="fa-solid fa-check"></i>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer p-0 pb-md-4 text-center border-0">
+        <button type="submit" class="btn btn-primary hover-bg-black text-white w-100 w-md-auto border my-0 mx-auto px-md-12 py-3 py-md-2">連結錢包</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- image loaded -->
   <script src="../app/assets/js/imagesloaded.pkgd.min.js"></script>

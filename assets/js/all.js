@@ -17,8 +17,12 @@ navMainToggle.onclick = function () {
       navMainToggle.setAttribute("title", "選單");
       navMainToggleTitle = navMainToggle.getAttribute("title");
     }
-}; // swiper
+}; //錢包 複選
 
+
+$('.wallet-check input').on('change', function () {
+  $(this).next('label').toggleClass('active');
+}); // swiper
 
 var swiperArtist = new Swiper('.swiperArtist', {
   effect: "coverflow",

@@ -11,6 +11,9 @@
   width: -moz-fit-content;
   width: fit-content; }
 
+.bg-img-none {
+  background-image: none; }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -16655,8 +16658,8 @@ ul {
     position: absolute;
     right: 0;
     bottom: 0;
-    border-left: 1rem transparent solid;
-    border-bottom: 1rem #E6553B solid; }
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid #E6553B; }
   .btn-corner:hover {
     background-color: #E6553B;
     color: #fff; }
@@ -16691,13 +16694,37 @@ ul {
     position: absolute;
     right: 0;
     bottom: 0;
-    border-left: 1rem transparent solid;
-    border-bottom: 1rem #E6553B solid; }
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid #E6553B; }
   .btn-corner-w:hover {
     background-color: #E6553B;
     color: #fff; }
     .btn-corner-w:hover::after {
       border-bottom: 1rem #000 solid; }
+
+.wallet-check label i {
+  display: none;
+  margin-left: auto; }
+
+.wallet-check label:hover {
+  background: #E6553B;
+  color: #fff; }
+
+.wallet-check label.active {
+  border: 1px solid #E6553B !important; }
+  .wallet-check label.active i {
+    display: block;
+    color: #E6553B; }
+  .wallet-check label.active:hover i {
+    color: #fff; }
+
+.btn-close {
+  background-image: none;
+  opacity: 1;
+  font-size: 1.25rem; }
+  .btn-close:hover {
+    color: #E6553B;
+    opacity: 1; }
 
 .card-Ranking .card {
   border: 1px solid #000;

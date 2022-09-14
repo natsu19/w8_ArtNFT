@@ -9,6 +9,9 @@
   width: -moz-fit-content;
   width: fit-content; }
 
+.bg-img-none {
+  background-image: none; }
+
 .clearfix::after {
   display: block;
   clear: both;

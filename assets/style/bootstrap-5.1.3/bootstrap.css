@@ -9,6 +9,9 @@
   width: -moz-fit-content;
   width: fit-content; }
 
+.bg-img-none {
+  background-image: none; }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
