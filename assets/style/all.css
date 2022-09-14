@@ -16700,14 +16700,8 @@ ul {
       border-bottom: 1rem #000 solid; }
 
 .card-Ranking .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  position: relative; }
   .card-Ranking .card img {
     width: 100%;
     height: 100%;
@@ -16724,9 +16718,6 @@ ul {
     -o-transition: 0.5s;
     transition: 0.5s; }
   .card-Ranking .card-no {
-    position: static;
-    height: auto;
-    width: auto;
     font-family: "noto sans TC";
     font-weight: bold;
     background: #fff;
@@ -16739,41 +16730,36 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
+    width: 64px;
+    height: 64px;
     border-right: 1px solid #000;
-    border-bottom: 0;
-    padding: 0 0.5rem; }
+    border-bottom: 1px solid #000;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0; }
   .card-Ranking .card-img {
-    max-height: 90px;
-    max-width: 90px;
+    height: 374px;
     overflow: hidden;
-    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: #000;
     position: relative; }
     .card-Ranking .card-img .btn-corner {
       position: absolute;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      background: rgba(0, 0, 0, 0.7);
+      background: #E6553B;
       z-index: 2;
       right: 0;
       bottom: 0;
-      height: 100%;
-      width: 100%;
       color: #fff;
       opacity: 0;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
       .card-Ranking .card-img .btn-corner::after {
-        border-bottom: 1rem #E6553B solid; }
+        border-bottom: 1rem #000 solid; }
   .card-Ranking .card-body {
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16781,8 +16767,7 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 0; }
+        flex-wrap: wrap; }
     .card-Ranking .card-body h5, .card-Ranking .card-body .h5 {
       padding: 1rem;
       font-size: 1.125rem;
@@ -16791,7 +16776,7 @@ ul {
       border-bottom: 1px solid #000; }
     .card-Ranking .card-body p {
       line-height: 1;
-      padding: 0.5rem 0.5rem; }
+      padding: 0.5rem 1rem; }
       .card-Ranking .card-body p i {
         margin-right: 0.5rem;
         font-size: 0.875rem; }
