@@ -16,9 +16,7 @@
 }
 
 .hover-primary {
-    &:hover {
-        color: $primary;
-    }
+    &:hover { color: $primary;}
 }
 
 .btn-corner-w{
@@ -48,9 +46,7 @@
         }
         border: 1px solid $primary !important;
         &:hover{
-            i{
-                color: $white;
-            }
+            i{color: $white;}
         }
     }
         

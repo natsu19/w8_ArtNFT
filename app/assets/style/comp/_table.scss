@@ -1,0 +1,115 @@
+:root{
+    --ranink-fsz:1.25rem;
+}
+
+.tableRanink{
+    
+    vertical-align: middle;
+    font-weight:$font-weight-bold ;
+    font-size: var(--ranink-fsz);
+    thead th{
+        font-weight: $font-weight-base;
+        font-size: $font-size-base;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+        &:nth-child(2){
+            text-align-last: left;
+        }
+    }
+    tbody{
+        border: 1px solid $black;
+        background: $white;
+        th{
+            text-align: center;
+            font-style: $h4-font-size;
+            border-right: 1px solid $black;
+            font-family: "Paytone One" !important;
+            @include media-breakpoint-down(lg){
+                padding: 0;
+            }
+        }
+        tr{
+            td{
+                padding: $spacer * 4;
+                text-align: right;
+                &:nth-child(2){ text-align: left;}
+                &:nth-child(3),&:nth-child(6){
+                    position: relative;
+                    &::before{
+                        font-family: "Font Awesome 6 Brands";
+                        content: "\f42e";
+                        font-weight: 400;
+                        font-size: 1rem;   
+                        position: absolute;
+                        left: 30%;
+                        line-height: calc( var(--raninkfsz) * 1.5) ;
+                    }
+                }
+                @include media-breakpoint-down(xl){
+                    &:nth-child(3),&:nth-child(6){
+                        &::before{ left: 15%;}
+                    }
+                }
+                @include media-breakpoint-down(lg){
+                    padding: $spacer * 4  $spacer * 2 ;
+                    &:nth-child(2){font-size: 1rem;}
+                    &:nth-child(3){
+                        position: relative;
+                        &::before{ left: 60%;}
+                        .btn{
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            z-index: 2;
+                            &::after {
+                                content: "+";
+                                color: $white;
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                width: 32px;
+                                height: 32px;
+                                border-left: $spacer * 8 solid transparent;
+                                border-bottom: $spacer * 8 solid $black;
+                            }
+                            &:hover::after{
+                                border-bottom: $spacer * 8 solid $primary;
+                            }
+                        }
+                    }
+                    &:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8){
+                        display: none;
+                    }
+                }
+                @include media-breakpoint-down(md){
+                    &:nth-child(2){font-size: 0.875rem;}
+                    &:nth-child(3){
+                        &::before{ left: 40%;}
+                    }
+                }
+                @include media-breakpoint-down(sm){
+                    &:nth-child(3){
+                        &::before{ left: 0;}
+                    }
+                }
+            }
+        } 
+    }
+    img{
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        margin-right: $spacer * 2;
+        @include media-breakpoint-up(lg){
+            margin-right: $spacer * 4;
+        }
+    }
+    
+    .accordion-collapse{
+        font-weight: $font-weight-base;
+        font-size: $h5-font-size;
+        .title{ font-size: 0.875rem; }
+    }
+    
+}
