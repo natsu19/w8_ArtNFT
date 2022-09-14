@@ -1,0 +1,28 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Squada One","Noto Sans TC", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.5;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    a{  
+        color: $black;
+        text-decoration:none;
+        transition: 0.5s;
+        &:hover{
+            transition: 0.8s;
+            color: $black;
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
+    }

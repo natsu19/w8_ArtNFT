@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/57c6a9e76f.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+  <link rel="bookmark" href="assets/images/favicon.ico" />
+  <title><%- title %>｜ w8 ART NFT</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="bg-light position-relative">
+  <header class="position-fixed fixed-top bg-light border-bottom ">
+    <div class="container-xxl py-0">
+      <nav aria-label="mainNavigation" class="navMain d-flex flex-row justify-content-between">
+        <h1 class="logo py-4 py-md-6 py-lg-8 ">
+          <a href="index.html"  title="回首頁" class="w-85px h-18px w-md-152px h-md-32px w-lg-190px h-lg-40px">ART NFT</a>
+        </h1>
+        <form class="d-flex px-lg-11  ms-auto border-start-lg align-items-center">
+          <input class="form-control border-0 bg-transparent w-288px px-1 py-2 d-none d-lg-block" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+          <a href="#" class="d-none d-lg-flex link-black align-items-center h-50px h-md-80px px-4 py-md-4" title="送出搜尋"><i class="fa-solid fa-magnifying-glass fs-4 hover-primary" ></i></a>
+          <!-- lg 以下 -->
+          <a href="#navSearch" class="searchToggle d-flex d-lg-none link-black align-items-center h-50px h-md-80px px-4 py-md-4" title="送出搜尋" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="navSearch"><i class="fa-solid fa-magnifying-glass fs-4 hover-primary" ></i></a>
+        </form>
+        <div class="d-none d-lg-block">
+          <ul class="navList d-flex list-unstyled text-center fw-bold">
+            <li class="border-start h-104px text-black hover-bg-black"><a href="discover.html" title="探索" class="d-flex px-8 w-100 h-100 align-items-center">探索</a></li>
+            <li class="border-start h-104px text-black hover-bg-black"><a href="#" title="市值" class="d-flex px-8 w-100 h-100 align-items-center">市值</a></li>
+            <li class="border-start h-104px text-black hover-bg-black"><a href="#" title="錢包" class="d-flex px-8 w-100 h-100 align-items-center"><i class="fa-solid fa-wallet fs-4"></i></a></li>
+          </ul>
+        </div>
+        
+        
+        <div class="navMainToggle w-60px h-50px h-md-80px py-md-4 d-lg-none" title="選單" data-bs-toggle="collapse" href="#navMainList" role="button" aria-expanded="false" aria-controls="navMainList"></div>
+        
+        
+      </nav>
+    </div>
+
+    <!-- navList lg以下 -->
+    <div class="collapse border-top bg-white pb-6" id="navMainList">
+      <ul class="container d-flex flex-column list-unstyled text-center fs-6">
+        <li class="border-bottom "><a href="#" title="探索" class="d-block py-6 fw-bold link-black">探索</a></li>
+        <li><a href="#" title="市值" class=" d-block py-6 fw-bold link-black">市值</a></li>
+        <li><a href="#" title="錢包" class="btn btn-primary text-white w-100 py-3 border ">連結錢包</a></li>
+      </ul>
+    </div>
+
+    <!-- searchBar -->
+    <div class="collapse bg-light border-bottom position-absolute top-0 start-0 w-100 " id="navSearch">
+      <div class="px-3 d-flex align-items-center">
+        <a href="#navSearch" class="searchToggle d-flex d-lg-none link-black align-items-center h-50px h-md-80px px-4 py-md-4" title="收合" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="navSearch">
+          <i class="fa-solid fa-chevron-left fs-4"></i>
+        </a>
+        <form class="d-flex px-lg-11 flex-fill ms-auto border-start-lg align-items-center">
+          <input class="form-control border-0 bg-transparent  px-1 my-md-6 tetx-start" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+          <a href="#" class="searchToggle d-flex link-black align-items-center h-50px h-md-80px px-4 py-md-4" title="送出搜尋" ><i class="fa-solid fa-magnifying-glass fs-4 hover-primary"></i></a>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="pt-50px pt-md-20 pt-lg-26">
+  <%- contents %>
+  </main>
+
+  <footer class="w-100 py-6 text-center text-NotoSansTC">
+    © ART NFT. All Rights Reserved
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- image loaded -->
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!-- masonry 瀑布流 -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  
+</body>
+
+</html>

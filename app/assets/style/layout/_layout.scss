@@ -1,0 +1,85 @@
+.logo{
+    transition: 0.5s;
+    margin: 0;
+        &:hover{
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+    a{
+        display: block;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        background:url(../images/logo.svg) center center no-repeat;
+        background-size: 100% auto ;
+    }
+}
+
+
+@include media-breakpoint-down(lg){
+    .navMain{
+        position: relative;
+        // height: 50px;
+        transition:0.5s; 
+        overflow:hidden; //沒展開時隱藏裡面的navList
+
+        &Toggle{
+            position: relative;
+            // width: 60px;
+            // height: 50px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        
+        //漢堡icon -start
+        &::before{
+            content:"";
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: $black;
+            transform: translateY(-6px); //漢堡上面那槓
+            box-shadow: 0 8px $black; //漢堡中間那槓
+            transition: 0.5s;
+            }
+        &::after{
+            content:"";
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: $black;
+            transform: translateY(10px); //漢堡下面那槓
+            transition: 0.5s;
+        }
+        //漢堡icon -end
+    }
+
+    }
+    
+    /*-----------------
+    active狀態下
+    --------------------*/
+    .navMain.active{
+        //height:35vh; //點擊展開後的高
+        transition:0.5s; 
+        align-items: start;
+
+      //icon點下去的效果,從漢堡變成X
+      //漢堡icon -start
+        .navMainToggle{ 
+            &::before{
+                transform: translateY(0px) rotate(45deg); //下降旋轉
+                box-shadow: 0 0 $black; //跟本體(上面那槓重合)
+            }
+        
+            &::after{
+                transform: translateY(0px) rotate(-45deg); //上升 反向45度
+            }
+        //漢堡icon -end
+
+        }
+    }
+}
+
