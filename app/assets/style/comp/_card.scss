@@ -1,5 +1,5 @@
 .card-Ranking{
-    @include card-Ranking-s;
+    @include card-Ranking;
     @include media-breakpoint-up(lg){
         @include card-Ranking;
     }
