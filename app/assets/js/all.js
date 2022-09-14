@@ -45,15 +45,23 @@ let navMainToggle = document.querySelector(".navMainToggle")
 
 
   // external js: masonry.pkgd.js
+//Fade Out the loading screen when all images loaded
 
-  $('.grid').masonry({
-    // set itemSelector so .grid-sizer is not used in layout
-    itemSelector: '.grid-item',
-    // use element for option
-    columnWidth: '.grid-sizer',
-    percentPosition: true
-  })
+  /* 瀑布流區塊div */
+    var $container = $('.masonry');
+    
+    //當圖片讀取完畢才執行
+    $container.imagesLoaded(function (){
+    //選擇瀑布流的區塊名稱
+      $container.masonry({
+      itemSelector: '.card-Artwork'
+      })
+    });
+
+// $('#artwork').imagesLoaded().progress( function() {
+//   $('#artwork').masonry(); // 渲染整體畫面
+// });
   // layout Masonry after each image loads
-  $grid.imagesLoaded().progress( function() {
-    $grid.masonry('layout');
-  });
+  // $grid.imagesLoaded().progress( function() {
+  //   $grid.masonry('layout');
+  // });
