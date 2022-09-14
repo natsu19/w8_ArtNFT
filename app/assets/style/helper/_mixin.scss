@@ -202,8 +202,8 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        border-left: $spacer * 4 transparent solid;
-        border-bottom: $spacer * 4 $primary solid;
+        border-left: $spacer * 4 solid transparent;
+        border-bottom: $spacer * 4 solid $primary;
     }
 
     &:hover {

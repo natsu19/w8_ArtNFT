@@ -22,6 +22,11 @@ navMainToggle.onclick = function(){
 
 }
 
+//錢包 複選
+$('.wallet-check input').on('change', function () {
+  $(this).next('label').toggleClass('active');
+});
+
 // swiper
 var swiperArtist = new Swiper('.swiperArtist', {
   effect: "coverflow",

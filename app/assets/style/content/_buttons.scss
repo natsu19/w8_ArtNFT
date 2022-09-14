@@ -26,3 +26,42 @@
         background-color: $white;
     }
 }
+
+
+
+.wallet-check{
+    label{
+        i{  
+            display: none;
+            margin-left: auto;
+        }
+    
+        &:hover{
+            background: $primary;
+            color: $white;
+        }
+    }
+    label.active{
+        i{
+            display: block;
+            color: $primary;
+        }
+        border: 1px solid $primary !important;
+        &:hover{
+            i{
+                color: $white;
+            }
+        }
+    }
+        
+}
+
+.btn-close{
+    background-image: none;
+    opacity: 1;
+    font-size: $h5-font-size;
+    &:hover{
+        color: $primary;
+        opacity: 1;
+    }
+}
