@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Paytone+One&family=Squada+One&display=swap");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -16601,6 +16601,9 @@ ul {
 .text-NotoSansTC {
   font-family: "Noto Sans TC"; }
 
+.text-PaytoneOne {
+  font-family: "Paytone One"; }
+
 .letter-spacing-lg {
   letter-spacing: 0.26rem; }
 
@@ -17074,6 +17077,101 @@ Artwork
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
+
+:root {
+  --ranink-fsz:1.25rem; }
+
+.tableRanink {
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: var(--ranink-fsz); }
+  .tableRanink thead th {
+    font-weight: 400;
+    font-size: 1rem; }
+    @media (max-width: 991.98px) {
+      .tableRanink thead th {
+        display: none; } }
+    .tableRanink thead th:nth-child(2) {
+      -moz-text-align-last: left;
+           text-align-last: left; }
+  .tableRanink tbody {
+    border: 1px solid #000;
+    background: #fff; }
+    .tableRanink tbody th {
+      text-align: center;
+      font-style: 1.5rem;
+      border-right: 1px solid #000;
+      font-family: "Paytone One" !important; }
+      @media (max-width: 991.98px) {
+        .tableRanink tbody th {
+          padding: 0; } }
+    .tableRanink tbody tr td {
+      padding: 1rem;
+      text-align: right; }
+      .tableRanink tbody tr td:nth-child(2) {
+        text-align: left; }
+      .tableRanink tbody tr td:nth-child(3), .tableRanink tbody tr td:nth-child(6) {
+        position: relative; }
+        .tableRanink tbody tr td:nth-child(3)::before, .tableRanink tbody tr td:nth-child(6)::before {
+          font-family: "Font Awesome 6 Brands";
+          content: "\f42e";
+          font-weight: 400;
+          font-size: 1rem;
+          position: absolute;
+          left: 30%;
+          line-height: calc( var(--raninkfsz) * 1.5); }
+      @media (max-width: 1199.98px) {
+        .tableRanink tbody tr td:nth-child(3)::before, .tableRanink tbody tr td:nth-child(6)::before {
+          left: 15%; } }
+      @media (max-width: 991.98px) {
+        .tableRanink tbody tr td {
+          padding: 1rem 0.5rem; }
+          .tableRanink tbody tr td:nth-child(2) {
+            font-size: 1rem; }
+          .tableRanink tbody tr td:nth-child(3) {
+            position: relative; }
+            .tableRanink tbody tr td:nth-child(3)::before {
+              left: 60%; }
+            .tableRanink tbody tr td:nth-child(3) .btn {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              z-index: 2; }
+              .tableRanink tbody tr td:nth-child(3) .btn::after {
+                content: "+";
+                color: #fff;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 32px;
+                height: 32px;
+                border-left: 2rem solid transparent;
+                border-bottom: 2rem solid #000; }
+              .tableRanink tbody tr td:nth-child(3) .btn:hover::after {
+                border-bottom: 2rem solid #E6553B; }
+          .tableRanink tbody tr td:nth-child(4), .tableRanink tbody tr td:nth-child(5), .tableRanink tbody tr td:nth-child(6), .tableRanink tbody tr td:nth-child(7), .tableRanink tbody tr td:nth-child(8) {
+            display: none; } }
+      @media (max-width: 767.98px) {
+        .tableRanink tbody tr td:nth-child(2) {
+          font-size: 0.875rem; }
+        .tableRanink tbody tr td:nth-child(3)::before {
+          left: 40%; } }
+      @media (max-width: 575.98px) {
+        .tableRanink tbody tr td:nth-child(3)::before {
+          left: 0; } }
+  .tableRanink img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-right: 0.5rem; }
+    @media (min-width: 992px) {
+      .tableRanink img {
+        margin-right: 1rem; } }
+  .tableRanink .accordion-collapse {
+    font-weight: 400;
+    font-size: 1.25rem; }
+    .tableRanink .accordion-collapse .title {
+      font-size: 0.875rem; }
 
 .swiper {
   width: 100%;
